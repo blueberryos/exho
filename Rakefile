@@ -13,15 +13,15 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "exho"
   gem.homepage = "http://github.com/vertexclique/exho"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
+  gem.summary = %Q{TODO: Driver managing framework for raspberry pi}
   gem.description = %Q{TODO: longer description of your gem}
   gem.email = "mahmutbulut0@gmail.com"
   gem.authors = ["Mahmut Bulut"]
   # dependencies defined in Gemfile
+  gem.executables = ['exho']
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -40,8 +40,8 @@ Rcov::RcovTask.new do |test|
   test.rcov_opts << '--exclude "gems/*"'
 end
 
-require 'cucumber/rake/task'
-Cucumber::Rake::Task.new(:features)
+#require 'cucumber/rake/task'
+#Cucumber::Rake::Task.new(:features)
 
 task :default => :test
 
